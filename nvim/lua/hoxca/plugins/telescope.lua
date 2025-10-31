@@ -60,6 +60,7 @@ return {
     vim.keymap.set("n", "<leader>ps", builtin.treesitter, { desc = "Lists tree-sitter symbols" })
     vim.keymap.set("n", "<leader>pg", builtin.live_grep, { desc = "Telescope live grep" })
     vim.keymap.set("n", "<leader>pk", builtin.keymaps, { desc = "List keymaps" })
+    vim.keymap.set("n", "<leader>pb", builtin.buffers, { desc = "List buffers" })
 		vim.keymap.set("n", "<leader>pw", function()
 			local word = vim.fn.expand("<cWORD>")
 			builtin.grep_string({ search = word })
