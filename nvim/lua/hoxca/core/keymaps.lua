@@ -3,6 +3,15 @@ local opts = { noremap = true, silent = true }
 vim.g.mapleader = ","
 vim.g.maplocalleader = ","
 
+-- hoxca speed motion
+vim.keymap.set("n", "<A-Up>", "8k", opts)
+vim.keymap.set("n", "<A-Down>", "8j", opts)
+vim.keymap.set("i", "<A-Up>", "<ESC>8ki", opts)
+vim.keymap.set("i", "<A-Down>", "<ESC>8ji", opts)
+vim.keymap.set("n", "<A-Left>", "0", opts)
+vim.keymap.set("n", "<A-Right>", "$", opts)
+
+-- visual bloc move config
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "moves lines down in visual selection" })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "moves lines up in visual selection" })
 
