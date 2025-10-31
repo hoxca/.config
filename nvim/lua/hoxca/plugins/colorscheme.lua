@@ -131,7 +131,7 @@ return {
             })
             -- HACK: set this on the color you want to be persistent
             -- when quit and reopening nvim
-            vim.cmd("colorscheme kanagawa")
+            -- vim.cmd("colorscheme kanagawa")
         end
     },
     -- NOTE: neosolarized 
@@ -251,6 +251,7 @@ return {
             --         end
             --     end,
             -- })
+            require("current-theme")
         end,
     },
 }
