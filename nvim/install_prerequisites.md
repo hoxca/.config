@@ -23,6 +23,6 @@ Use the patched glyphed foot and enable mouse reporting
 
 I use iterm2 terminal and here is the revelent config options:
 
-![Font configuration](./iterm2_font_configuration "Font configuration")
+![Font configuration](./images/iterm2_font_configuration "Font configuration")
 
-![Mouse configuration](./iterm2_mouse_configuration "Mouse configuration")
+![Mouse configuration](./images/iterm2_mouse_configuration "Mouse configuration")
