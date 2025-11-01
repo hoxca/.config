@@ -58,20 +58,20 @@ vim.keymap.set("n", "<C-A-Left>", ":bp<CR>", { desc = "Previous buffer" })
 vim.keymap.set("n", "<C-A-Down>", ":bd<CR>", { desc = "Delete buffer" })
 
 -- tab stuff
-vim.keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "open new tab" })
-vim.keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "close current tab" })
-vim.keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc ="go to next" })
-vim.keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "go to pre" })
-vim.keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "open current tab in new tab" })
+-- vim.keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "open new tab" })
+-- vim.keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "close current tab" })
+-- vim.keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc ="go to next" })
+-- vim.keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "go to pre" })
+-- vim.keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "open current tab in new tab" })
 
 --split management
 
 -- split window vertically
-vim.keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })
+vim.keymap.set("n", "<leader>wv", "<C-w>v", { desc = "Split window vertically" })
 -- split window horizontally
-vim.keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" })
+vim.keymap.set("n", "<leader>wh", "<C-w>s", { desc = "Split window horizontally" })
 -- make split windows equal width & height
-vim.keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) 
+vim.keymap.set("n", "<leader>we", "<C-w>=", { desc = "Make splits equal size" })
 -- close current split window
-vim.keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })
+vim.keymap.set("n", "<leader>wx", "<cmd>close<CR>", { desc = "Close current split" })
 
