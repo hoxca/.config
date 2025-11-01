@@ -17,8 +17,9 @@ return {
       lualine_a = { 'mode' },
       lualine_b = { 'branch' },
       lualine_c = { { 'diff', colored = true, symbols = { added = ' ', modified = ' ', removed = ' ' } }, 'filename' },
-      lualine_x = { 'filetype' },
-      lualine_y = { 'encoding' },
+      lualine_x = { 'buffers' },
+      lualine_y = { 'filetype', 'encoding' },
+      lualine_z = { 'location'},
     }
   })
   end

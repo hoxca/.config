@@ -41,16 +41,21 @@ vim.keymap.set("n", "x", '"_x', opts)
 
 -- Replace the word cursor is on globally
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
-    { desc = "Replace word cursor is on globally" })
+  { desc = "Replace word cursor is on globally" })
 
 -- Hightlight yanking
 vim.api.nvim_create_autocmd("TextYankPost", {
-    desc = "Highlight when yanking (copying) text",
-    group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
-    callback = function()
-        vim.hl.on_yank()
-    end,
+  desc = "Highlight when yanking (copying) text",
+  group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
+  callback = function()
+      vim.hl.on_yank()
+  end,
 })
+
+-- buffer cycle management
+vim.keymap.set("n", "<C-A-Right>", ":bn<CR>", { desc = "Next buffer" }) 
+vim.keymap.set("n", "<C-A-Left>", ":bp<CR>", { desc = "Previous buffer" })
+vim.keymap.set("n", "<C-A-Down>", ":bd<CR>", { desc = "Delete buffer" })
 
 -- tab stuff
 vim.keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "open new tab" })
