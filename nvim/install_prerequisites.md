@@ -4,6 +4,9 @@ For Neovim to work well with your system and terminal, make sure you have instal
 
 ## System Package
 
+Using homebrew here or equivalent package manager
+
+```
 brew install neovim
 
 brew install fd
@@ -15,6 +18,7 @@ brew install fontconfig
 
 brew install tree-sitter
 brew install tree-sitter-cli
+```
 
 ## Term
 
