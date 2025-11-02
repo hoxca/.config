@@ -1,7 +1,7 @@
 local opts = { noremap = true, silent = true }
 
-vim.g.mapleader = ","
-vim.g.maplocalleader = ","
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- hoxca speed motion
 vim.keymap.set("n", "<A-Up>", "8k", { desc = "speed motion up" })
