@@ -1,3 +1,6 @@
+-- Disable fillchars ~
+vim.opt.fillchars = { eob = ' ' }
+
 -- Disable netrw banner
 vim.cmd("let g:netrw_banner = 0")
 
