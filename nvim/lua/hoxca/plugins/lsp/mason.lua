@@ -1,9 +1,9 @@
 return {
-    "williamboman/mason.nvim",
+    "williamboman/mason.nvim",                -- package management for lsp
     lazy = false,
     dependencies = {
-        "williamboman/mason-lspconfig.nvim",
-        "neovim/nvim-lspconfig",
+        "williamboman/mason-lspconfig.nvim",  -- manage lsp configuration in mason (ensure_installed)
+        "neovim/nvim-lspconfig",              -- communication between neovim and lsp
     },
     config = function()
         -- import mason and mason_lspconfig
