@@ -19,16 +19,16 @@ vim.keymap.set("v", "<", "<gv", { desc = "move bloc < indentation" })
 vim.keymap.set("v", ">", ">gv", { desc = "move bloc > indentation" })
 
 -- the how it be paste
-vim.keymap.set("x", "<leader>p", [["_dP]])
+-- vim.keymap.set("x", "<leader>p", [["_dP]])
 
 -- remember yanked
-vim.keymap.set("v", "p", '"_dp', opts)
+-- vim.keymap.set("v", "p", '"_dp', opts)
 
 -- Copies or Yank to system clipboard
-vim.keymap.set("n", "<leader>Y", [["+Y]], opts)
+-- vim.keymap.set("n", "<leader>Y", [["+Y]], opts)
 
 -- leader d delete wont remember as yanked/clipboard when delete pasting
-vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
+-- vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 -- format without prettier using the built in
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
@@ -53,7 +53,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 
 -- buffer cycle management
-vim.keymap.set("n", "<C-A-Right>", ":bn<CR>", { desc = "Next buffer" }) 
+vim.keymap.set("n", "<C-A-Right>", ":bn<CR>", { desc = "Next buffer" })
 vim.keymap.set("n", "<C-A-Left>", ":bp<CR>", { desc = "Previous buffer" })
 vim.keymap.set("n", "<C-A-Down>", ":bd<CR>", { desc = "Delete buffer" })
 
