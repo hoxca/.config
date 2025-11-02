@@ -14,6 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup(
     {
         { import = "hoxca.plugins" },
+        { import = "hoxca.plugins.lsp" },
     },
     {
         checker = {
