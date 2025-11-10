@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export FZF_ALT_C_COMMAND='fd --type d --follow'
+export FZF_ALT_C_COMMAND='fd --hidden --follow --type d'
 export FZF_CTRL_T_COMMAND='fd --hidden --follow --exclude .git'
 
 # Use fd (https://github.com/sharkdp/fd) for listing path candidates.
