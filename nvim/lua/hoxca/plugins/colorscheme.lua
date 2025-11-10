@@ -107,6 +107,10 @@ return {
                         PmenuSel = { fg = "NONE", bg = theme.ui.bg_p2 },
                         PmenuSbar = { bg = theme.ui.bg_m1 },
                         PmenuThumb = { bg = theme.ui.bg_p2 },
+                        BufferTabPageFill = { bg = "#403C36" },
+                        BufferInactive = { bg = "#403C36" },
+                        BufferInactiveMod = { bg = "#403C36" },
+                        BufferInactiveSign = { bg = "#403C36" },
 
                         -- Save an hlgroup with dark background and dimmed foreground
                         -- so that you can use it where your still want darker windows.

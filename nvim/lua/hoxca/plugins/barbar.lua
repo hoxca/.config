@@ -9,7 +9,7 @@ return {
     init = function() vim.g.barbar_auto_setup = false end,
     opts = {
 
-      animation = true, 
+      animation = true,
       tabpages = true,
       highlight_inactive_file_icons = false,
       highlight_visible = true,
@@ -23,7 +23,7 @@ return {
         modified = {button = '●'},
         pinned = {button = '', filename = true},
         -- Use a preconfigured buffer appearance— can be 'default', 'powerline', or 'slanted'
-        preset = 'powerline',
+        preset = 'default',
 
       },
       sidebar_filetypes = {
