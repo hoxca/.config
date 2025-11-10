@@ -1,0 +1,48 @@
+# HoxCa theme color settings for colorls
+#
+# Main Colors
+unrecognized_file: '#82c0af' 
+recognized_file:   '#82c0af' 
+executable_file:   '#8be9fd' 
+dir:               '#bfa95b' 
+
+# Link
+dead_link: '#ff5555'         # Red
+link:      '#bae4b3'        
+
+# Special Files
+socket:    '#50fa7b'         # Green
+blockdev:  '#50fa7b'         # Green
+chardev:   '#50fa7b'         # Green
+
+# Access Modes
+write:     '#bd93f9' 
+read:      '#bd93f9'   
+exec:      '#8be9fd'   
+no_access: '#bd93f9' 
+
+# Age
+hour_old:    '#95a5d7'       # Comment - 20% lighter
+day_old:     '#6272a4'       # Comment
+no_modifier: '#44475a'       # Current Line
+
+# File Size
+file_large:  '#5df4cb'   
+file_medium: '#62d1b2'  
+file_small:  '#82c0af' 
+
+# Random
+report: '#50fa7b'
+user:   '#6272a4' 
+tree:   '#44475a'
+empty:  '#6272a4'
+error:  '#ff5555'
+normal: '#6272a4'
+
+# Git
+addition:     '#8be9fd'      # Cyan
+modification: '#f1fa8c'      # Yellow
+deletion:     '#ff5555'      # Red
+untracked:    '#ffb86c'      # Orange
+unchanged:    '#50fa7b'      # Green
+
