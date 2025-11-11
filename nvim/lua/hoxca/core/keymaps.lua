@@ -31,7 +31,7 @@ vim.keymap.set("v", ">", ">gv", { desc = "move bloc > indentation" })
 -- vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 -- format without prettier using the built in
-vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
+vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, { desc = "LSP buffer format" })
 
 -- Unmaps Q in normal mode
 vim.keymap.set("n", "Q", "<nop>")
@@ -48,7 +48,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   desc = "Highlight when yanking (copying) text",
   group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
   callback = function()
-      vim.hl.on_yank()
+    vim.hl.on_yank()
   end,
 })
 
@@ -74,4 +74,3 @@ vim.keymap.set("n", "<leader>wh", "<C-w>s", { desc = "Split window horizontally"
 vim.keymap.set("n", "<leader>we", "<C-w>=", { desc = "Make splits equal size" })
 -- close current split window
 vim.keymap.set("n", "<leader>wx", "<cmd>close<CR>", { desc = "Close current split" })
-
