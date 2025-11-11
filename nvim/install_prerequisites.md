@@ -30,3 +30,17 @@ I use iterm2 terminal and here is the revelent config options:
 ![Font configuration](./images/iterm2_font_configuration.png "Font configuration")
 
 ![Mouse configuration](./images/iterm2_mouse_configuration.png "Mouse configuration")
+
+## Conform
+
+```
+brew install prettier
+brew install shfmt
+brew install stylua
+brew install goimports
+brew install gofumpt
+brew install yamllint
+brew install markdownlint-cli2
+brew install taplo
+```
+
