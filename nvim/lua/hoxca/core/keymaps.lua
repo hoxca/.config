@@ -74,3 +74,7 @@ vim.keymap.set("n", "<leader>wh", "<C-w>s", { desc = "Split window horizontally"
 vim.keymap.set("n", "<leader>we", "<C-w>=", { desc = "Make splits equal size" })
 -- close current split window
 vim.keymap.set("n", "<leader>wx", "<cmd>close<CR>", { desc = "Close current split" })
+
+-- set keymap names
+vim.keymap.set("n", "<leader>D", "", { desc = "Debugger" })
+vim.keymap.set("n", "g", "", { desc = "LSP utility" })
