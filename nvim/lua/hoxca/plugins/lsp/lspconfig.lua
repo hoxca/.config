@@ -35,19 +35,19 @@ return {
                 end, opts)
 
                 opts.desc = "Smart rename"
-                vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
+                vim.keymap.set("n", "grn", vim.lsp.buf.rename, opts )
 
                 opts.desc = "Show buffer diagnostics"
-                vim.keymap.set("n", "<leader>D", "<cmd>Telescope diagnostics bufnr=0<CR>", opts)
+                vim.keymap.set("n", "gb", "<cmd>Telescope diagnostics bufnr=0<CR>", opts)
 
                 opts.desc = "Show line diagnostics"
-                vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts)
+                vim.keymap.set("n", "gl", vim.diagnostic.open_float, opts)
 
                 opts.desc = "Show documentation for what is under cursor"
                 vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
 
                 opts.desc = "Restart LSP"
-                vim.keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts)
+                vim.keymap.set("n", "grs", ":LspRestart<CR>", opts)
 
                 vim.keymap.set("i", "<C-h>", function()
                     vim.lsp.buf.signature_help()
