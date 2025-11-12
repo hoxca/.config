@@ -44,3 +44,9 @@ brew install markdownlint-cli2
 brew install taplo
 ```
 
+## Go testing
+
+```
+brew install gotestsum
+```
+
