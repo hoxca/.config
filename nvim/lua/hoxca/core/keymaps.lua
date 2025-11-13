@@ -78,3 +78,12 @@ vim.keymap.set("n", "<leader>wx", "<cmd>close<CR>", { desc = "Close current spli
 -- set keymap names
 vim.keymap.set("n", "<leader>D", "", { desc = "Debugger" })
 vim.keymap.set("n", "g", "", { desc = "LSP utility" })
+
+
+  vim.keymap.set("n", "<leader>tc", ":Coverage<CR>", { desc = "[t]est [c]overage in gutter", silent = true })
+  vim.keymap.set(
+    "n",
+    "<leader>tC",
+    ":CoverageLoad<CR>:CoverageSummary<CR>",
+    { desc = "[t]est [C]overage summary", silent = true }
+  )
