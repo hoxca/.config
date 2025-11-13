@@ -12,7 +12,8 @@
         "qwen3-coder:latest": { // configure the model
           "name": "Qwen3 Coder 30b Local",
           "tools": true,
-          "reasoning": true
+          "reasoning": true,
+          "flash_attention": true,
         }
       }
     }
