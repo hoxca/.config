@@ -1,0 +1,41 @@
+{
+  "$schema": "https://charm.land/crush.json",
+  "options": {
+    "initialize_as": "AGENTS.md",
+    "attribution": {
+      "trailer_style": "none",
+      "generated_with": false
+    },
+    "disable_metrics": true
+  },
+  "lsp": {
+    "go": {
+      "command": "gopls",
+      "env": {
+        "GOTOOLCHAIN": "go1.25.4"
+      }
+    }
+  },
+  "permissions": {
+    "allowed_tools": [
+      "view",
+      "ls",
+      "grep"
+    ]
+  },
+  "providers": {
+    "ollama": {
+      "name": "Ollama",
+      "base_url": "http://localhost:11434/v1/",
+      "type": "openai-compat",
+      "models": [
+        {
+          "name": "Qwen3 Coder 30b Local",
+          "id": "qwen3-coder:latest",
+          "context_window": 256000,
+          "default_max_tokens": 20000
+        }
+      ]
+    }
+  }
+}
