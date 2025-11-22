@@ -53,9 +53,9 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 
 -- buffer cycle management
-vim.keymap.set("n", "<C-A-Right>", ":bn<CR>", { desc = "Next buffer" })
-vim.keymap.set("n", "<C-A-Left>", ":bp<CR>", { desc = "Previous buffer" })
-vim.keymap.set("n", "<C-A-Down>", ":bd<CR>", { desc = "Delete buffer" })
+vim.keymap.set("n", "<C-M-Right>", ":bn<CR>", { desc = "Next buffer" })
+vim.keymap.set("n", "<C-M-Left>", ":bp<CR>", { desc = "Previous buffer" })
+vim.keymap.set("n", "<C-M-Down>", ":bd<CR>", { desc = "Delete buffer" })
 
 -- tab stuff
 -- vim.keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "open new tab" })
