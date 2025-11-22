@@ -1,7 +1,13 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "model": "ollama/qwen3-coder:30b", // set default model
+  "plugin": [
+    "file:///Users/hugh/projects/code/opencode-gemini-auth"
+  ],
+  // "model": "ollama/qwen3-coder:30b", // set default model
   "provider": {
+    "google": {
+      "name": "gemini",
+    },
     "ollama": { // provider id
       "npm": "@ai-sdk/openai-compatible",
       "name": "Ollama",
@@ -11,6 +17,12 @@
       "models": {
         "qwen3-coder:latest": { // configure the model
           "name": "Qwen3 Coder 30b Local",
+          "tools": true,
+          "reasoning": true,
+          "flash_attention": true,
+        },
+        "llama3.1:8b": {
+          "name": "llama3.1:8b",
           "tools": true,
           "reasoning": true,
           "flash_attention": true,
